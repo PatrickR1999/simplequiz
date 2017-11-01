@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="8dp"
+    tools:context="com.example.opilane.simplequiz.MainActivity">
+
+    <TextView
+        android:id="@+id/kysimus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:textColor="@android:color/black"
+        app:layout_constraintRight_toLeftOf="parent"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+
+    <Button
+        android:id="@+id/vastus4"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="D"
+        android:background="@android:color/holo_blue_light"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/vastus3"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/vastus3"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/vastus3"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/vastus3"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="C"
+        android:background="@android:color/holo_orange_light"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/vastus2"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/vastus2"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/vastus2"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/vastus2"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="B"
+        android:background="@android:color/holo_purple"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/vastus1"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/vastus1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/vastus1"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/vastus1"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="A"
+        android:background="@android:color/holo_green_light"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="125dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:onClick="onClick"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skoor: "
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="161dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="161dp"
+        app:layout_constraintLeft_toLeftOf="@+id/vastus4"
+        app:layout_constraintTop_toTopOf="@+id/vastus4" />
+
+</android.support.constraint.ConstraintLayout>
